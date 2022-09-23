@@ -2,7 +2,7 @@ import math
 
 import mesa
 
-from .model import VirusOnNetwork, State, number_infected
+from .model import PriceCoin, State, number_infected
 
 
 def network_portrayal(G):
@@ -125,8 +125,9 @@ model_params = {
 }
 
 server = mesa.visualization.ModularServer(
-    VirusOnNetwork,
-    [network, get_resistant_susceptible_ratio, chart],
+    PriceCoin,
+    # [network, get_resistant_susceptible_ratio, chart],
+    [chart],
     "Virus Model",
     model_params,
 )
