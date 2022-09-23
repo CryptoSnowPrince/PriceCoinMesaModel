@@ -16,6 +16,7 @@ def number_state(model, state):
 
 
 def number_infected(model):
+    # return 9
     return number_state(model, State.INFECTED)
 
 
@@ -28,7 +29,7 @@ def number_resistant(model):
 
 
 class PriceCoin(mesa.Model):
-    """A virus model with some number of agents"""
+    """PriceCoin"""
 
     def __init__(
         self,

@@ -128,7 +128,7 @@ server = mesa.visualization.ModularServer(
     PriceCoin,
     # [network, get_resistant_susceptible_ratio, chart],
     [chart],
-    "Virus Model",
+    "PriceCoin",
     model_params,
 )
 server.port = 8521
